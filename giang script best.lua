@@ -3207,7 +3207,7 @@ task.wait()
 end
 elseif ReplicaAndReverseGet == true then 
 OrionLib:MakeNotification({Name = "Error",Content = "You don't have Reverse equipped or you have in lobby.",Image = "rbxassetid://7733658504",Time = 5}) 
-wait(0.05)
+wait()
 ReplicaAndReverse:Set(false) 
 end 
     end    
