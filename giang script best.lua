@@ -9,6 +9,19 @@ local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.Place
 if game.PlaceId == 6403373529 or game.PlaceId == 9015014224 or game.PlaceId == 11520107397 then
 local Window = OrionLib:MakeWindow({IntroText = "Slap Battles 👏", IntroIcon = "rbxassetid://15315284749",Name = ("Slap Battles 👏".." | ".. identifyexecutor()),IntroToggleIcon = "rbxassetid://7734091286", HidePremium = false, SaveConfig = false, IntroEnabled = true, ConfigFolder = "slap battles"})
 
+
+
+local safeport = Instance.new("Part", Workspace)
+safeport.Name = "SafePort15"
+safeport.Size = Vector3.new(200, 10, 200) 
+safeport.Transparency = 0.5 
+safeport.CanCollide = true
+safeport.Anchored = true
+safeport.CFrame = CFrame.new(2457.6001, 229.365677, -4558.22363, -0.999834299, 0.000101457415, 0.0182033889, 3.8126462e-08, 0.999984503, -0.00557136489, -0.018203672, -0.00557044102, -0.999818802)
+local decal = Instance.new("Decal", safeport)
+decal.Face = "Top"
+decal.Texture = "rbxassetid://17047840821"
+
 ---Bypass---
 
 local Namecall
@@ -3177,12 +3190,10 @@ end
     end    
 })
 
-Tab14:AddDropdown({
+Tab14:AddButton({
     Name = "Will Teleport Farm",
-    Default = "Up To You",
-    Options = {"Up To You","SafeSpotBox 1.0","SafeSpotBox 2.0"},
-    Callback = function(Value)
-_G.GetTeleport = Value
+    Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2461.50464, 243.291565, -4546.78467, 0.966821849, -0.00649187574, 0.255369186, -1.00234743e-09, 0.999677002, 0.0254133251, -0.255451679, -0.0245701578, 0.966509581)
     end    
 })
 
@@ -3211,6 +3222,20 @@ wait()
 ReplicaAndReverse:Set(false) 
 end 
     end    
+})
+
+Tab14:AddButton({
+    Name = "Add Speed RP Farm",
+    Callback = function()
+        while true do
+    for i, v in pairs(workspace:GetChildren()) do 
+        if v.Name:match(game.Players.LocalPlayer.Name) and v:FindFirstChild("HumanoidRootPart") then
+            game:GetService("ReplicatedStorage").ReplicaHit:FireServer(v:WaitForChild("Head"),true)
+        end
+    end
+task.wait()
+end
+    end
 })
 
 ReplicaAndBallerFarm = Tab14:AddToggle({
