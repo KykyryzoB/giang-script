@@ -15,7 +15,7 @@ safeport.Size = Vector3.new(200, 10, 200)
 safeport.Transparency = 0.5 
 safeport.CanCollide = true
 safeport.Anchored = true
-safeport.CFrame = CFrame.new(2457.6001, 229.365677, -4558.22363, -0.999834299, 0.000101457415, 0.0182033889, 3.8126462e-08, 0.999984503, -0.00557136489, -0.018203672, -0.00557044102, -0.999818802)
+safeport.CFrame = CFrame.new(-330.850525, -28118.9043, 19.2763519, -0.224860072, 0.0987688228, -0.969372332, -4.02742151e-09, 0.994849324, 0.101364665, 0.974391043, 0.0227928702, -0.223701894)
 local decal = Instance.new("Decal", safeport)
 decal.Face = "Top"
 decal.Texture = "rbxassetid://17047840821"
@@ -310,7 +310,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["SafeBox"
 elseif _G.GetTeleport == "SafeSpotBox 2.0" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Safespot"].CFrame * CFrame.new(0,10,0)
 elseif _G.GetTeleport == "SafePort15" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2461.50464, 243.291565, -4546.78467, 0.966821849, -0.00649187574, 0.255369186, -1.00234743e-09, 0.999677002, 0.0254133251, -0.255451679, -0.0245701578, 0.966509581)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-330.850525, -28118.9043, 19.2763519, -0.224860072, 0.0987688228, -0.969372332, -4.02742151e-09, 0.994849324, 0.101364665, 0.974391043, 0.0227928702, -0.223701894) * CFrame.new(0,10,0)
 end
 wait(0.5)
 game:GetService("ReplicatedStorage").Duplicate:FireServer()
@@ -346,7 +346,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["SafeBox"
 elseif _G.GetTeleport == "SafeSpotBox 2.0" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Safespot"].CFrame * CFrame.new(0,10,0)
 elseif _G.GetTeleport == "SafePort15" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2461.50464, 243.291565, -4546.78467, 0.966821849, -0.00649187574, 0.255369186, -1.00234743e-09, 0.999677002, 0.0254133251, -0.255451679, -0.0245701578, 0.966509581)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-330.850525, -28118.9043, 19.2763519, -0.224860072, 0.0987688228, -0.969372332, -4.02742151e-09, 0.994849324, 0.101364665, 0.974391043, 0.0227928702, -0.223701894) * CFrame.new(0,10,0)
 end
 wait(0.1)
 game:GetService("ReplicatedStorage").Duplicate:FireServer()
@@ -386,7 +386,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["SafeBox"
 elseif _G.GetTeleport == "SafeSpotBox 2.0" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Safespot"].CFrame * CFrame.new(0,10,0)
 elseif _G.GetTeleport == "SafePort15" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2461.50464, 243.291565, -4546.78467, 0.966821849, -0.00649187574, 0.255369186, -1.00234743e-09, 0.999677002, 0.0254133251, -0.255451679, -0.0245701578, 0.966509581)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-330.850525, -28118.9043, 19.2763519, -0.224860072, 0.0987688228, -0.969372332, -4.02742151e-09, 0.994849324, 0.101364665, 0.974391043, 0.0227928702, -0.223701894) * CFrame.new(0,10,0)
 end
 wait(0.25)
 game:GetService("ReplicatedStorage").GeneralAbility:FireServer()
